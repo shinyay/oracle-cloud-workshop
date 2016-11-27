@@ -14,7 +14,7 @@
 
 Oracle Cloud へサインインする[(https://cloud.oracle.com/sign-in)](https://cloud.oracle.com/sign-in)。
 データセンターを選択し、アイデンティティドメインとアカウント情報を入力してログインする。
-ログイン後、ダッシュボード画面からDeveloper Cloud Service のドロップダウンメニューから **サービス・コンソールを開く**を選択する。
+ログイン後、ダッシュボード画面からDeveloper Cloud Service のドロップダウンメニューから **サービス・コンソールを開く** を選択する。
 
 ![](jpimages/springboot01.jpg)
 
@@ -44,7 +44,7 @@ Initial Repository に**Import existing repository**を選択し、***https://gi
 ![](jpimages/springboot06.jpg)
 
 
-### Spring Boot サンプル・アプリケーション用のビルド・ジョブの構成 ###
+### Spring Boot サンプル・アプリケーション用のビルド・ジョブの構成
 
 プロジェクトが作成されたら、Application Container Cloud Service 用のフォーマットのSpring Boot サンプル・アプリケーションのビルド・ジョブを作成する。
 
