@@ -38,7 +38,7 @@ This tutorial demonstrates how to:
 
 Oracle Cloud へサインインする[(https://cloud.oracle.com/sign-in)](https://cloud.oracle.com/sign-in)。
 データセンターを選択し、アイデンティティドメインとアカウント情報を入力してログインする。
-ログイン後、ダッシュボード画面からDeveloper Cloud Service のドロップダウンメニューから **サービス・コンソールを開く**を選択する。
+ログイン後、ダッシュボード画面の Developer Cloud Service のドロップダウンメニューから **サービス・コンソールを開く**を選択する。
 
 ![](jpimages/springboot01.jpg)
 
