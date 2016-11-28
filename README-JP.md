@@ -26,9 +26,9 @@ The content contains several independent modules that cover different aspects of
 
 #### Developer Cloud Service, Application Container Cloud Service, Oracle Enterprise Pack For Eclipse を用いた Spring Boot アプリケーション開発ライフサイクルの支援
 
-+ [Spring Boot アプリケーション用のDeveloper Cloude Service プロジェクトの作成](springboot-sample/create.devcs.project.md)
-+ [Developer Cloud Service と Application Container Cloud Service を用いた継続的ビルド・インテグレーションの作成](springboot-sample/devcs.accs.ci.md)
-+ [Using Eclipse IDE (Oracle Enterprise Pack for Eclipse) with Oracle Developer Cloud Service](oepe/setup.oepe.md)
+- [Spring Boot アプリケーション用のDeveloper Cloude Service プロジェクトの作成](springboot-sample/create.devcs.project.md)
+- [Developer Cloud Service と Application Container Cloud Service を用いた継続的ビルド・インテグレーションの作成](springboot-sample/devcs.accs.ci.md)
+- [Developer Cloud Service を用いた Eclipse 統合開発環境 (Oracle Enterprise Pack for Eclipse) の利用](oepe/setup.oepe.md)
 
 ####Bind Frontend Application running on lightweight container in Oracle Appplication Container Cloud with backend resources running on Java Cloud Service####
 
