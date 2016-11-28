@@ -2,95 +2,119 @@
 ---
 # ORACLE Cloud-Native DevOps workshop #
 -----
-## Using Eclipse IDE (Oracle Enterprise Pack for Eclipse) with Oracle Developer Cloud Service ##
+## Developer Cloud Service を用いた Eclipse 統合開発環境 (Oracle Enterprise Pack for Eclipse) の利用
 
-### Introduction ###
-You can access Oracle Developer Cloud Service projects from Integrated Development Environments (IDEs) such as Oracle Enterprise Pack for Eclipse (OEPE), Oracle JDeveloper, and NetBeans IDE. The Eclipse IDE and the Oracle Enterprise Pack for Eclipse (OEPE) includes integration for Oracle Developer Cloud Service, which conveniently exposes the most common Cloud development tasks from within the IDE.
+### 説明
+Developer Cloud Service は、Oracle Enterprise Pack for Eclipse や、Oracle JDeveloper, NetBeans のような統合開発環境から利用できる。Eclipse と Oracle Enterprise Pack for Eclipse (OEPE) は、Developer Cloud Service との統合機能を備えており、Developer Cloud Service で管理している開発タスクをIDE の中で閲覧する事がができる。
 
-Oracle Developer Cloud Service integration with the Eclipse IDE includes the following:
+Developer Cloud Service とEclipse との統合により以下の機能を実現する。
 
-+ A dedicated Oracle Cloud view that displays Oracle Developer Cloud Service projects of which you are a member
-+ Integration with Mylyn and the Oracle Developer Cloud Service Issues system
-+ Source control system integration with the Oracle Developer Cloud Service Git repository
+- メンバーとなっているDeveloper Cloud Service プロジェクトの専用ビューの表示
+- Mylyn とDeveloper Cloud Service の問題管理システムの統合
+- ソース管理システムとDeveloper Cloud Service のGit リポジトリの統合
 
-You can download the Eclipse IDE from [http://www.eclipse.org/](http://www.eclipse.org/) and OEPE from [http://www.oracle.com/technetwork/developer-tools/eclipse/downloads/index.html](http://www.oracle.com/technetwork/developer-tools/eclipse/downloads/index.html).
+Eclipse ダウンロード・サイト
+- [http://www.eclipse.org/](http://www.eclipse.org/)
 
-If you are using the Eclipse IDE, download and install the Oracle Cloud Tools plugin from the Eclipse IDE marketplace. In OEPE, the plugin is installed by default.
+OEPE ダウンロード・サイト
+ - [http://www.oracle.com/technetwork/developer-tools/eclipse/downloads/index.html](http://www.oracle.com/technetwork/developer-tools/eclipse/downloads/index.html).
 
-### About this tutorial ###
-This tutorial demonstrates how to:
-  
-+ Setup Eclipse IDE (Oracle Enterprise Plugin for Eclipse)
+Eclipse を使用する場合は、Eclipse マーケット・プレイスからOracle Cloud Tools plugin をダウンロードしてインストールをする。OEPE の場合は、デフォルトでプラグインがインストールされている。
 
-### Prerequisites ###
+### チュートリアルについて
+このチュートリアルは、以下を実施する:
 
-+ [Create Oracle Developer Cloud Service project for SpringBoot application](../springboot-sample/create.devcs.project.md)
-+ [Create continuous build integration using Oracle Developer Cloud Service and Oracle Application Container Cloud Service](../springboot-sample/devcs.accs.ci.md)
-+ Eclipse IDE with Oracle Cloud Tools plugin or Oracle Enterprise Plugin for Eclipse installed.
++ Eclipse 統合開発環境のセットアップ (Oracle Enterprise Plugin for Eclipse)
 
-### Steps ###
+### 前提
 
-#### Configure Cloud Tools Plugin ####
+- 以下のチュートリアルを実施済みである事
+  - [Spring Boot アプリケーション用のDeveloper Cloude Service プロジェクトの作成](../springboot-sample/create.devcs.project.md)
+  - [Developer Cloud Service と Application Container Cloud Service を用いた継続的ビルド・インテグレーションの作成](../springboot-sample/devcs.accs.ci.md)
+- Eclipse IDE with Oracle Cloud Tools plugin 導入済みのEclipse または、Oracle Enterprise Plugin for Eclipse をインストール済みである事
 
-Open OEPE (using desktop icon ![](images/01.png)) and set (leave the default, `home/oracle/workspace`) workspace location. Close the Welcome page. To open the *Oracle Cloud* view from the Window menu, click *Show View* and then *Other*.
+### 手順
 
-![](images/02.png)
+#### Cloud Tools Plugin の設定
 
-From the list open *Oracle Cloud* and select *Oracle Cloud*.
+OEPE を開き、Welcomeページを閉じる。Window メニューから、***Oracle Cloud*** ビューを開くために、***Show View*** をクリックし、続いて ***Other*** をクリックする。
 
-![](images/03.png)
+![](jpimages/oepe01.jpg)
 
-If you are connecting to Oracle Developer Cloud Service for the first time, click the Connect link.
 
-![](images/04.png)
 
-In the Oracle Cloud Service Connection dialog, enter the following:
+一覧から ***Oracle Cloud***　を展開し、その中の ***Oracle Cloud*** を選択する。
 
-+ **Identity Domain**: Enter the identity domain of Oracle Developer Cloud Service.
-+ **Username** and **Password**: Enter the user name and password.
-+ **Connection Name**: Enter a name for the service instance, if necessary. By default, the connection name is set to the identity domain name.
+![](jpimages/oepe02.jpg)
 
-![](images/05.png)
 
-Provide a master password to store securely your credentials, so in the future you don't need to enter every time when you open OEPE. Don't forget to note the master password.
+Developr Cloud Service へ初回接続の場合は、**Connect** をクリックする。
 
-![](images/06.png)
+![](jpimages/oepe03.jpg)
 
-After your credentials have been validated, you are logged in to Oracle Developer Cloud Service and the Oracle Cloud view displays all projects that are assigned to you. Open the tree view myOracle Cloud(Cloud connection name) -> Developer -> springboot(DevCS project name) -> Code and there you can see the Git repository hosted on Oracle Developer Cloud Service.
 
-![](images/07.png)
+Oracle Cloud Connection ダイアログが表示されるので、以下の項目を入力する。
 
-To clone the Git repository to your machine double click or right click -> Activate on the Git repository and clone will start.
+- **Identity Domain**: アイデンティティ・ドメイン名
+- **Username**: ログイン・ユーザ名
+- **Password**: ログイン・パスワード
+- **Connection Name**: Oracle Cloud への接続の識別名、デフォルトではアイデンティティ・ドメイン名が設定される
 
-![](images/08.png)
+![](jpimages/oepe04.jpg)
 
-After the successful clone your local copy will be available in your workspace.
 
-![](images/09.png)
+認証が通った後、Developer Cloud Service へログインすると、割り当たれているプロジェクトが表示される。Oracle Cloud ビューでツリーを展開していく。
+[Connection name] -> Developer -> [Developer Cloud Serviceで作成済みのプロジェクト名] -> Code と展開すると、Developer Cloud Service でホストしている Git リポジトリが表示される。
 
-To import a Maven based project right click on the Project Exporer area and will pop up the menu where you can select Import projects -> Import...
+![](jpimages/oepe05.jpg)
 
-![](images/10.png)
 
-Select Existing Maven Projects and click Next.
+この Git リポジトリをOEPE内にクローンするために、**ダブル・クリック** か、**右クリックしてActivate** を実施する。
 
-![](images/11.png)
+![](jpimages/oepe06.jpg)
 
-Browse the location of the cloned repository in `/home/oracle/workspace/` folder and select `acc/springboot-sample` subfolder. If the workspace location is the default it should look like similar to the following: `/home/oracle/workspace/springboot.git-9534/springboot-sample`
-Please note, that you need to give one of the subfolder of the local repository.
-Click Finish.
 
-![](images/12.png)
+Git リポジトリのクローンが行われる。
 
-OEPE now starts to validate and build the project which can take few seconds. Finally you can see the imported project in the Project Explorer area.
+![](jpimages/oepe07.jpg)
 
-![](images/13.png)
 
-#### Change code and test using continuous integration ####
+クローンが成功すると、ワークスペースで利用できるようになる。
 
-The project hosted on Oracle Developer Cloud Service has build job which ensures that new application build and deployment to Application Container Cloud Service happens when any developer push code changes to Git repository.
+![](jpimages/oepe08.jpg)
 
-Check the process modifying small piece on the application. First check the default page of the application. Open the tree view myOracleCloud -> Applications -> springboot-demo. Right click on springboot-demo and select Open In Browser menu item.
+
+Maven プロジェクトをインポートするために、**Project Exporer** で右クリックし、ポップアップ・メニューから **Import -> Import...** を選択する。
+
+![](jpimages/oepe09.jpg)
+
+
+一覧から **Existing Maven Projects** を選択し、**Next** をクリックする。
+
+![](jpimages/oepe10.jpg)
+
+
+ワークスペース・フォルダにクローンされているリポジトリの位置を **Browse...** から参照し、**springboot-sample** サブフォルダを選択し **OK** をクリックする。
+
+![](jpimages/oepe11.jpg)
+
+
+追加したプロジェクトにチェックを付け、**Finish** をクリックする。
+
+![](jpimages/oepe12.jpg)
+
+
+OEPE は妥当性チェックとプロジェクトのビルドを開始する。ビルドが終了すると、Project Explorer にプロジェクトをインポートでき ている。
+
+![](jpimages/oepe13.jpg)
+
+
+#### 継続的インテグレーションを利用したコードの変更とテスト
+
+Developer Cloud Service 上のプロジェクトは、開発者が Git リポジトリにコードを格納した時にアプリケーションをビルドする **ビルド・ジョブ** と、Application Container Cloud Service への **デプロイメント** 機能を持っている。
+アプリケーションを少し修正し、その一連のプロセスを確認する。
+
+First check the default page of the application. Open the tree view myOracleCloud -> Applications -> springboot-demo. Right click on springboot-demo and select Open In Browser menu item.
 
 ![](images/14.png)
 
@@ -98,42 +122,55 @@ New browser is opened and you should see the application's home page.
 
 ![](images/15.png)
 
-Go back to OEPE and in the Project Explorer area find the *springbootdemo* project and open the **Deployed Resources -> webapp -> WEB-INF -> views -> welcome.jsp**
+OEPE の **Project Explorer** で ***springbootdemo*** プロジェクトを開き、 **Deployed Resources** を展開して **webapp -> WEB-INF -> views -> welcome.jsp** を開く。
 
-![](images/16.png)
+![](jpimages/oepe14.jpg)
 
-Modify the following part:
 
+以下の箇所を修正する:
+
+```html
   	<br>SpringBoot application demo. Current server time: <%= new java.util.Date() %> <br>
+```
 
-To what you would like to see on the page. For example:
+![](jpimages/oepe15.jpg)
 
+修正例:
+
+```html
 	<br>SpringBoot application demo. <font color="red">MODIFIED IN OEPE.</font> Current server time: <%= new java.util.Date() %> <br>  	
+```
 
-Save the changes. To commit and push changes to Git right click on project and select Team -> Commit...
+![](jpimages/oepe16.jpg)
 
-![](images/17.png) 
 
-Git Staging view is displayed. First make sure the `welcome.jsp` is in the *Staged Changes* area. Type a commit message e.g. 'Home page modified in OEPE'. Optionally enter your name or cloud username and give a (valid or fake) email address in the following format as the screenshot shows. Click **Commit and Push...**
+変更を保存する。変更内容をコミットし、Git リポジトリにプッシュするためにプロジェクトを **右クリックして Team -> Commit...** を選択する。
 
-![](images/18.png)
+![](jpimages/oepe17.jpg)
 
-In the Push dialog leave the default branch and click OK.
 
-![](images/19.png)
+**Git Staging** ビューが表示される。まず、`welcome.jsp` を***Unstaged Changes*** から ***Staged Changes*** にドラッグ・アンド・ドロップで移動する。そして、**Commit Message** を入力する。例："OEPE でホームページを修正"
+オプションで Author 及び Committer に名前とメールアドレスを入力する。
+最後に **Commit and Push...** をクリックする。
 
-Now change back to the browser and check the Build page in the Oracle Developer Cloud Service project. You should see that a new build (in our case: *springboot_build*) has been fired by the Git changes.
+![](jpimages/oepe18.jpg)
 
-![](images/20.png)
 
-Once the job is done change to the tab to Deploy and you can see that a new deployment has been started too. If you remember the Deployment was configured to redeploy every time when a new successful build artifact is ready.
+**Push Results** ダイアログが表示される。デフォルト・ブランチのまま変更せずに、このまま **OK** をクリックする。
 
-![](images/21.png)
+![](jpimages/oepe19.jpg)
 
-Now check the changes of the home page of the application. Open the tree view myOracleCloud -> Applications -> springboot-demo. Right click on springboot-demo and select Open In Browser menu item.
 
-![](images/14.png)
+ブラウザで Develop Cloud Service プロジェクトのビルドページを表示する。Git リポジトリの変更に伴うビルドが確認できる。(以下の例では、*Spring_Boot_Sample_App_Build*)
 
-New browser (tab) is opened and you should see the changes (red text) on the application's home page.
+![](jpimages/oepe20.jpg)
 
-![](images/22.png)
+
+ビルド・ジョブが終了したらデプロイタブに変更する。すると、新しく行われたデプロイメントが確認できる。
+
+![](jpimages/oepe21.jpg)
+
+
+ブラウザでSpring Boot サンプル・アプリケーションを確認すると、変更内容が反映されている事が確認できる。
+
+![](jpimages/oepe22.jpg)
