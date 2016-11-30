@@ -2,7 +2,7 @@
 ---
 # ORACLE Cloud-Native DevOps workshop
 ----
-## Prepare Database Cloud Service for TechCo (Java EE) サンプル・アプリケーション用 Database Cloud Service の準備
+## TechCo (Java EE) サンプル・アプリケーション用 Database Cloud Service の準備
 
 ### 説明
 
