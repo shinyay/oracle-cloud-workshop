@@ -89,9 +89,9 @@ $ [oracle@localhost cloud-utils]$ chmod 600 privateKey
 - **バックアップの保存先**: デフォルトのまま (クラウド・storageとローカル・ストレージ両方)
 - **クラウド・ストレージ・コンテナ**: データベース・インスタンス用のストレージ・コンテナ名。次のフォーマットで入力する: `Storage-IDENTITYDOMAIN/CONTAINERNAME`
 - **クラウド・ストレージ・ユーザー名/パスワード**: Storage Cloud Service のアクセス・ユーザ及びパスワード
-+ **クラウド・ストレージ・コンテナの作成**: チェックする (コンテナが存在しない場合に作成する)
-+ **文字セット**: データベースの文字セット (デフォルト: AL32UTF8)
-+ **各国語文字セット**: SQL NCHAR データ・タイプ使用する文字セット (デフォルト: AL16UTF16)
+- **クラウド・ストレージ・コンテナの作成**: チェックする (コンテナが存在しない場合に作成する)
+- **文字セット**: データベースの文字セット (デフォルト: AL32UTF8)
+- **各国語文字セット**: SQL NCHAR データ・タイプ使用する文字セット (デフォルト: AL16UTF16)
 
 ![](jpimages/dbcs-create08.png)
 
@@ -103,7 +103,6 @@ $ [oracle@localhost cloud-utils]$ chmod 600 privateKey
 ![](jpimages/dbcs-create09.png)
 
 
-リクエストが受領されると、Database Service Cloud コンソール画面に戻り、新しいインスタンスが表示される。この時点では、インスタンスはメンテナンス状態となっている。**進行中** をクリックするとインスタンス作成状態の情報が確認できる。
 
 ![](jpimages/dbcs-create10.png)
 
