@@ -226,6 +226,5 @@ Oracle Cloud マイ・サービスのダッシュボード画面に移動する�
 ブラウザで次のURLを開く: `https://<public-ip-address>/TechCo-ECommerce`
 
 サンプル・アプリケーションのホーム・ページが確認できる。
-You should now see the home page of the sample application.
 
 ![](jpimages/jcs-deploy29.jpg)
