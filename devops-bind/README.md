@@ -8,7 +8,7 @@
 
 このチュートリアルは Developer Cloud Service を用いた標準開発ワークフローに基づいている。Developer Cloud Service を使用するとチームがどのように変更管理に協力して取り組むかを説明する事を目的としている。
 
-オンプレミス・サイロ型アプリケーション・アーキテクチャに対して、クラウド・ネイティブ・アプリケーションの最大の差異は、サービス間に依存関係を構成についてである。例えば、Application Container Cloud Service にデプロイしたアプリケーションが、Java Cloud Service で稼働するサービスなどにアクセスする必要があるとする。明示的なエンドポイントや、構成情報でさえもソースコードにハードコードする事は、誤ったアプローチとされており、特にクラウドの世界において誤りであると言われている。例えば、IP アドレスやURLといったサービス・エンドポイントはすぐに変更されうるためである。アプリケーション・アーキテクチャを柔軟に保つために、Application Container Cloud Service は、**サービス・バインディングs** を提供している。これにより、他の契約している Oracle Cloud Services (例えば、Java Cloud Service や Databasrd Cloud Service) に対するバインディング情報を追加する事ができる。追加する際には、Application Container Cloud Servcie のコンソール画面か、メタ情報ファイルである`deployment.json`を使用する。
+オンプレミス・サイロ型アプリケーション・アーキテクチャに対して、クラウド・ネイティブ・アプリケーションの最大の差異は、サービス間に依存関係を構成についてである。例えば、Application Container Cloud Service にデプロイしたアプリケーションが、Java Cloud Service で稼働するサービスなどにアクセスする必要があるとする。明示的なエンドポイントや、構成情報でさえもソースコードにハードコードする事は、誤ったアプローチとされており、特にクラウドの世界において誤りであると言われている。例えば、IP アドレスやURLといったサービス・エンドポイントはすぐに変更されうるためである。アプリケーション・アーキテクチャを柔軟に保つために、Application Container Cloud Service は、**サービス・バインディング** を提供している。これにより、他の契約している Oracle Cloud Services (例えば、Java Cloud Service や Databasrd Cloud Service) に対するバインディング情報を追加する事ができる。追加する際には、Application Container Cloud Servcie のコンソール画面か、メタ情報ファイルである`deployment.json`を使用する。
 
 ![](images/service.bindings.png)
 
