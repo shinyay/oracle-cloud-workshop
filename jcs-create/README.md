@@ -27,7 +27,7 @@ Oracle Cloud へ[サインイン](../common/sign.in.to.oracle.cloud.md) する [
 ![](jpimages/jcs-create01.png)
 
 
-Database Cloud Service コンソール画面が表示される。初めてコンソール画面を開く場合、ウェルカム・ページが表示される。この場合は、**コンソールに移動** をクリックする。
+Java Cloud Service コンソール画面が表示される。初めてコンソール画面を開く場合、ウェルカム・ページが表示される。この場合は、**コンソールに移動** をクリックする。
 
 ![](jpimages/jcs-create02.jpg)
 
