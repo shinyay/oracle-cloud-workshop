@@ -2,12 +2,12 @@
 -----
 ## Oracle Cloud へのサイン・イン
 
-1.　ブラウザから[cloud.oracle.com](https://cloud.oracle.com/ja_JP/home)を開き、  **サイン・イン** をクリックする
+1.　ブラウザから[cloud.oracle.com](https://cloud.oracle.com/ja_JP/home)を開き、**サイン・イン** をクリックする
 
 ![](jpimages/sign01.jpg)
 
 
-2.　データ・センターを選択肢、**マイ・サービスy** をクリックする
+2.　データ・センターを選択肢、**マイ・サービス** をクリックする
 
 ![](jpimages/sign02.jpg)
 
