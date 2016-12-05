@@ -77,9 +77,9 @@ Database Cloud Service では、インスタンス作成時に以下のエディ
 ```bash
 $ [oracle@localhost Desktop]$ cd /<クローンしたGitリポジトリ>/cloud-utils
 $ [oracle@localhost cloud-utils]$ unzip sshkeybundle.zip
-		Archive:  sshkeybundle.zip
-		  inflating: privateKey              
-		  inflating: publicKey
+      Archive:  sshkeybundle.zip
+      inflating: privateKey              
+      inflating: publicKey
 $ [oracle@localhost cloud-utils]$ chmod 600 privateKey
 ```
 
